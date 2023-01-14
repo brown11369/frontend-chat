@@ -1,0 +1,104 @@
+.reg-formcontainer,.login-formcontainer {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 1rem;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #131324;
+}
+
+.register-form,.login-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #00000076;
+    border-radius: 2rem;
+    padding: 3rem 5rem;
+}
+
+.brand {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.app-image {
+    height: 5rem;
+}
+
+.app-heading{
+    color: white;
+    text-transform: uppercase;
+}
+
+.register-input,.login-input {
+    background-color: transparent;
+    padding: 0.4rem;
+    border: 0.1rem solid #4e0eff;
+    border-radius: 0.4rem;
+    color: white;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.register-input:focus,.login-input:focus {
+    border: 0.1rem solid #997af0;
+    outline: none;
+}
+
+.register-button,.login-button {
+    background-color: #997af0;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.register-button:hover,.login-button:hover {
+    background-color: #4e0eff;
+}
+
+.login-text,.reg-text {
+    color: white;
+    text-transform: uppercase;
+}
+
+.login-link,.reg-link {
+    color: #4e0eff;
+    text-decoration: none;
+    font-weight: bold;
+}

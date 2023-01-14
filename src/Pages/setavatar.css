@@ -1,0 +1,79 @@
+.avatar-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #020000;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loader{
+    width: 40%;
+}
+
+.avatar-picker {
+    color: white;
+}
+
+.avatars {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+}
+
+.avatars .avatar {
+    border: 0.4rem solid transparent;
+    padding: 0.4rem;
+    border-radius: 5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.5s,ease-in-out;
+    transition: 0.5s,ease-in-out;
+}
+
+.avatars .selected {
+    border: 0.4rem solid #4e0eff;
+}
+
+.avatars .avatar .avatar-pic {
+    height: 6rem;
+}
+
+.avatar-button {
+    background-color: #997af0;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}

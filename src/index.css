@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.EmojiPickerReact li.epr-emoji-category>.epr-emoji-category-label {
+  background-color: #080420;
+}
