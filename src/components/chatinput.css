@@ -1,0 +1,79 @@
+.chat-input-container{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #080420;
+    padding: 0.2rem;
+    padding-bottom: 0.3rem;
+}
+
+
+.chat-input-container .button-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+.chat-input-container .button-container .emoji {
+    position: relative;
+}
+
+
+.chat-input-container .input-form {
+    width: 100%;
+    border-radius: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    gap: 2rem;
+    background-color: #ffffff34;
+}
+
+
+
+.chat-input-container .input-form input {
+    width: 90%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-left: 1rem;
+}
+
+.chat-input-container .input-form input:focus {
+    outline: none;
+}
+
+
+.chat-input-container .input-form button {
+    padding: 0.3rem 1.6rem;
+    border-radius: 0rem 2rem 2rem 0rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #9a86f3;
+    border: none;
+    cursor: pointer;
+}

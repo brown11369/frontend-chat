@@ -2,8 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .EmojiPickerReact li.epr-emoji-category>.epr-emoji-category-label {
   background-color: #080420;
+}
+
+::-webkit-scrollbar{
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #00002a;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #9186f3;
+    border-radius: 0.2rem;
 }

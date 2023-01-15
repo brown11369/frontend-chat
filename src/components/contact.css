@@ -1,0 +1,125 @@
+.contact-container {
+    display: grid;
+    grid-template-rows: 10% 78% 12%;
+    overflow: hidden;
+    background-color: #080420;
+}
+
+
+.contact-container .brand {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-container .brand img {
+    height: 2rem;
+}
+
+.contact-container .brand h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.contact-container .contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: auto;
+    gap: 0.8rem;
+}
+
+
+.contact-container .contacts .contact {
+    background-color: #ffffff39;
+    min-height: 4rem;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    gap: 1rem;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+
+.contact-container .contacts .selected {
+    background-color: #9186f3;
+}
+
+.contact-container .contacts .contact .avatar img {
+    height: 3rem;
+}
+
+
+.contact-container .contacts .contact .username h3 {
+    color: white;
+}
+
+
+.contact-container .current-user {
+    background-color: #0d0d30;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-container .current-user .avatar img {
+    height: 4rem;
+    max-inline-size: 100%;
+}
+
+
+.contact-container .current-user .username h2 {
+    color: white;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    .contact-container .current-user {
+        gap: 0.5rem;
+    }
+
+    .contact-container .current-user .username h2 {
+        font-size: 1rem;
+    }
+}

@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./register.css"
+import "./reglog.css"
 
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
@@ -78,7 +78,7 @@ function Register() {
       <div className="reg-formcontainer">
         <form className="register-form" onSubmit={(event) => { handleSubmit(event) }}>
           <div className="brand">
-            <img className="app-image" src="" alt="" />
+            <img className="app-image" src="./vito.png" alt="Vito-Logo" />
             <h1 className="app-heading">Chat</h1>
           </div>
           <input className="register-input" type="text" placeholder="User Name" name="username" onChange={(event) => { handleInput(event) }} />

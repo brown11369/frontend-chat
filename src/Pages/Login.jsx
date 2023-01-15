@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./register.css"
+import "./reglog.css"
 
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
@@ -31,6 +31,20 @@ function Login() {
     event.preventDefault()
     if (handleValidation()) {
       const {email, password} = formdata;
+
+      
+      // const {data}=await axios.get("https://catfact.ninja/fact")
+      // alert(data.fact)
+
+      // fetch("https://catfact.ninja/fact")
+      // .then((res)=>res.json())
+      // .then((data)=>{
+      //   alert(data?.fact)
+      // })
+      // .catch((err)=>{
+      //   alert(err?.message);
+      // });
+
       const {data}=await axios.post(loginRoute,{email, password})
       if(data.status===false){
         toast.error(data.message)
@@ -69,7 +83,7 @@ function Login() {
       <div className="login-formcontainer">
         <form className="login-form" onSubmit={(event) => { handleSubmit(event) }}>
           <div className="brand">
-            <img className="app-image" src="" alt="" />
+            <img className="app-image" src="./vito.png" alt="Vito-Logo" />
             <h1 className="app-heading">Chat</h1>
           </div>
           <input className="login-input" type="text" placeholder="Email" name="email" onChange={(event) => { handleInput(event) }} />

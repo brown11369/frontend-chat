@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./setavatar.css"
 import loader from "../assets/loader.gif"
 import { Buffer } from "buffer";
-
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import axios from "axios";
 import { setAvatarRoute } from "../utils/APIRoutes";
 
+import "./setavatar.css"
 
 function SetAvatar() {
 
@@ -65,25 +64,26 @@ function SetAvatar() {
     }
 
     return (
-        <>{
-            isLoading ? <div className="avatar-container">
-                <img src={loader} alt="loader" className="loader" />
-            </div> :
-                <div className="avatar-container">
-                    <div className="title-container">
-                        <h1 className="avatar-picker">Pick an avatar as your profile picture.</h1>
-                    </div>
-                    <div className="avatars">{avatars.map((avatar, index) => {
-                        return (
-                            <div key={index} className={`avatar ${selectedavatar === index ? "selected" : ""}`}>
-                                <img className="avatar-pic" src={`data:image/svg+xml;base64,${avatar}`} alt="avatar" onClick={() => { setSelectedAvatar(index) }} />
-                            </div>
-                        )
-                    })}</div>
-                    <button onClick={setProfilePicture} className="submit-btn avatar-button">Set as Profile Picture</button>
+        <>
+            {
+                isLoading ? <div className="avatar-container">
+                    <img src={loader} alt="loader" className="loader" />
+                </div> :
+                    <div className="avatar-container">
+                        <div className="title-container">
+                            <h1 className="avatar-picker">Pick an avatar as your profile picture.</h1>
+                        </div>
+                        <div className="avatars">{avatars.map((avatar, index) => {
+                            return (
+                                <div key={index} className={`avatar ${selectedavatar === index ? "selected" : ""}`}>
+                                    <img className="avatar-pic" src={`data:image/svg+xml;base64,${avatar}`} alt="avatar" onClick={() => { setSelectedAvatar(index) }} />
+                                </div>
+                            )
+                        })}</div>
+                        <button onClick={setProfilePicture} className="submit-btn avatar-button">Set as Profile Picture</button>
 
-                </div>
-        }
+                    </div>
+            }
             <ToastContainer />
         </>
     )

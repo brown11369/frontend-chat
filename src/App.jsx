@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-        <Route path='*' element={<Error/>}/>
-          <Route path='/register' element={<Register/>}/>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/setavatar' element={<SetAvatar/>}/>
-          <Route path='/' element={<Chat/>}/>
+          <Route path='*' element={<Error />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/setavatar' element={<SetAvatar />} />
+          <Route path='/' element={<Chat />} />
         </Routes>
       </BrowserRouter>
     </div>

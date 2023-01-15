@@ -1,9 +1,4 @@
 .chat-container {
-    height: 100vh;
-    width: 100vw;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -20,18 +15,19 @@
     background-color: #131324;
 }
 
-.inner-chat-container {
-    height: 85vh;
-    width: 85vw;
+
+
+.chat-container .chat-inner-container {
+    height: 100vh;
+    width: 100vw;
     background-color: #00000076;
     display: grid;
     grid-template-columns: 25% 75%;
 }
 
 
-
-@media screen and (min-width: 720px) and (max-width: 1080px) {
-    .inner-chat-container {
+@media screen and (min-width: 720px) and (max-width: 1080px){
+    .chat-container .chat-inner-container {
         grid-template-columns: 35% 65%;
     }
 

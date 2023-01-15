@@ -1,0 +1,27 @@
+.logout-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #9a86f3;
+    border: none;
+    cursor: pointer;
+}
+.logout-button:hover{
+    background-color: #3f3c52;
+}
+
+.logout-button svg {
+    font-size: 1.3rem;
+    color: #ebe7ff;
+}
