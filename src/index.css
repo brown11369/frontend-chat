@@ -9,15 +9,16 @@
   background-color: #080420;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.4rem;
 }
 
-::-webkit-scrollbar-track{
-  background-color: #00002a;
+::-webkit-scrollbar-track {
+  background-color: #34347c;
+  border-radius: 0.2rem;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #9186f3;
-    border-radius: 0.2rem;
+  border-radius: 0.2rem;
 }

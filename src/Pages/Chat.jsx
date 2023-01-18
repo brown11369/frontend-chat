@@ -15,6 +15,9 @@ const Chat = () => {
   const [currentUser, setCurrentuser] = useState(undefined);
   const [currentChat, setCurrentChat] = useState(undefined)
 
+
+  const [hide, setHide] = useState("")
+
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -66,13 +69,13 @@ const Chat = () => {
   return (
     <>
       <div className="chat-container">
-        <div className="chat-inner-container">
+        <div className={`chat-inner-container ${hide}`}>
 
-          <Contacts contacts={contacts} currentUser={currentUser} changeChat={handleChatChange} />
+          <Contacts setHide={setHide} contacts={contacts} currentUser={currentUser} changeChat={handleChatChange} />
 
           {
             currentChat === undefined ?
-              <Welcome currentUser={currentUser} /> : <ChatContainer currentChat={currentChat} currentUser={currentUser} socket={socket} />
+              <Welcome currentUser={currentUser} /> : <ChatContainer setHide={setHide} currentChat={currentChat} currentUser={currentUser} socket={socket} />
           }
         </div>
       </div>

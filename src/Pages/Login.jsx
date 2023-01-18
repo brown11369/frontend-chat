@@ -32,19 +32,6 @@ function Login() {
     if (handleValidation()) {
       const {email, password} = formdata;
 
-      
-      // const {data}=await axios.get("https://catfact.ninja/fact")
-      // alert(data.fact)
-
-      // fetch("https://catfact.ninja/fact")
-      // .then((res)=>res.json())
-      // .then((data)=>{
-      //   alert(data?.fact)
-      // })
-      // .catch((err)=>{
-      //   alert(err?.message);
-      // });
-
       const {data}=await axios.post(loginRoute,{email, password})
       if(data.status===false){
         toast.error(data.message)

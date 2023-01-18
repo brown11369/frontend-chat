@@ -1,23 +1,15 @@
 .chat-page-container {
-    padding-top: 1rem;
     display: grid;
     grid-template-rows: 10% 78% 12%;
-    gap: 0.1rem;
     overflow: hidden;
 }
 
 
 .chat-page-container .chat-header {
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    padding: 0.2rem;
+    padding: 1.2rem;
+    justify-content: space-between;
 }
 
 .chat-page-container .chat-header .user-details {
@@ -34,7 +26,8 @@
 }
 
 .chat-page-container .chat-header .user-details .username h3 {
-    color: white;
+    color: #111b21;
+    font-weight: 600;
 }
 
 
@@ -43,17 +36,15 @@
 
 .chat-page-container .chat-messages {
     padding: 1rem 2rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 1rem;
     overflow: auto;
-    background-image: url("https://1.bp.blogspot.com/-BqyLwDjzgtc/X1Dinb86T0I/AAAAAAAAaek/hcR7gfjykxkOHXYynBxcvb3-WQDVTgOugCLcBGAsYHQ/w439-h781/wallpaper-4k-heroscreen.png");
-    /* background-repeat: no-repeat; */
+    background-image: url("./chat-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .chat-page-container .chat-messages .message {
@@ -87,16 +78,16 @@
     padding: 1rem;
     font-size: 1.1rem;
     border-radius: 1rem;
-    color: #d1d1d1;
+    color: #ffffff;
 }
 
 .chat-page-container .chat-messages .recieved .content {
-    background-color: #4f04ff8f;
+    background-color: #9a86f3;
 }
 
 
 .chat-page-container .chat-messages .sended .content {
-    background-color: #9900ff9c;
+    background-color: #725eed;
 }
 
 
@@ -104,7 +95,7 @@
 
 
 
-@media screen and (min-width: 720px) and (max-width: 1080px){
+@media screen and (min-width: 720px) and (max-width: 1080px) {
     .chat-page-container {
         grid-auto-rows: 15% 70% 15%;
     }

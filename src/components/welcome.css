@@ -22,6 +22,14 @@
     height: 12rem;
 }
 
+.welcome-container h1 {
+    color: #2196f3;
+}
+
 .welcome-container span {
-    color: #4e0eff;
+    color: #1565c0;
+}
+
+.welcome-container h3 {
+    color: #2196f3;
 }

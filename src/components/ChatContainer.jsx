@@ -1,13 +1,12 @@
 import axios from "axios";
 import "./chatcontainer.css"
 import ChatInput from "./ChatInput";
-import Logout from "./Logout";
 import { sendMessagesRoute } from "../utils/APIRoutes";
 import { getMessagesRoute } from "../utils/APIRoutes";
 import { useEffect, useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const ChatContainer = ({ currentChat, currentUser, socket }) => {
+const ChatContainer = ({ setHide, currentChat, currentUser, socket }) => {
 
     const [messages, setMessages] = useState([]);
     const [arrivalMessage, setArrivalMessage] = useState(null);
@@ -75,7 +74,9 @@ const ChatContainer = ({ currentChat, currentUser, socket }) => {
                         <h3>{currentChat?.username}</h3>
                     </div>
                 </div>
-                <Logout />
+                <p onClick={() => {
+                    setHide("")
+                }}>Back</p>
             </div>
             <div className="chat-messages">
                 {

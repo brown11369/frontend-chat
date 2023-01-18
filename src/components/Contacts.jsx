@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import Logout from "./Logout";
 
 import "./contact.css"
 
 
-const Contacts = ({ contacts, currentUser, changeChat }) => {
+const Contacts = ({setHide, contacts, currentUser, changeChat }) => {
     const [currentUserName, setCurrentUserName] = useState(undefined);
     const [currentUserImage, setCurrentUserImage] = useState(undefined);
     const [currentSelected, setCurrentSelected] = useState(undefined);
@@ -27,9 +28,12 @@ const Contacts = ({ contacts, currentUser, changeChat }) => {
             {
                 currentUserImage && currentUser && (
                     <div className="contact-container">
-                        <div className="brand">
-                            <img src="./vito.png" alt="Vito-Logo" />
-                            <h3>Vito</h3>
+                        <div className="contact-header">
+                            <div className="brand">
+                                <img src="./vito.png" alt="Vito-Logo" />
+                                <h3>Vito</h3>
+                            </div>
+                            <Logout />
                         </div>
                         <div className="contacts">
                             {
@@ -37,6 +41,7 @@ const Contacts = ({ contacts, currentUser, changeChat }) => {
                                     return (
                                         <div key={index} className={`contact ${index === currentSelected ? "selected" : ""}`} onClick={() => {
                                             changeCurrentChat(contact, index);
+                                            setHide("hide")
                                         }}>
                                             <div className="avatar">
                                                 <img src={`data:image/svg+xml;base64,${contact?.avatarImage}`} alt="avatar" />

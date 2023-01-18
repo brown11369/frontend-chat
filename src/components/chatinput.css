@@ -2,55 +2,36 @@
     display: grid;
     grid-template-columns: 5% 95%;
     -webkit-align-items: center;
-    -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    background-color: #080420;
-    padding: 0.2rem;
-    padding-bottom: 0.3rem;
+    padding: 1.2rem;
 }
 
-
-.chat-input-container .button-container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: white;
-    gap: 1rem;
-}
-
-.chat-input-container .button-container .emoji {
+.chat-input-container .emoji-box img {
+    width: 1.5rem;
+    cursor: pointer;
     position: relative;
+}
+
+aside.EmojiPickerReact.epr-main {
+    position: absolute !important;
+    bottom: 4rem;
 }
 
 
 .chat-input-container .input-form {
-    width: 100%;
-    border-radius: 2rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    gap: 2rem;
-    background-color: #ffffff34;
 }
 
 
 
 .chat-input-container .input-form input {
     width: 90%;
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: #111b21;
     border: none;
-    padding-left: 1rem;
+    border-radius: 0.6rem 0rem 0rem 0.6rem;
+    font-size: 1rem;
+    padding: 0.6rem;
 }
 
 .chat-input-container .input-form input:focus {
@@ -59,11 +40,8 @@
 
 
 .chat-input-container .input-form button {
-    padding: 0.3rem 1.6rem;
+    padding: 0.3rem 1.1rem;
     border-radius: 0rem 2rem 2rem 0rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -77,3 +55,4 @@
     border: none;
     cursor: pointer;
 }
+
