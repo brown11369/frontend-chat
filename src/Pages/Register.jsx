@@ -17,6 +17,8 @@ function Register() {
     confirmpassword: "",
   })
 
+  const [showPassword,setShowPassword]=useState("password")
+
   useEffect(()=>{
     if(localStorage.getItem("user")){
       navigate("/")
@@ -83,9 +85,17 @@ function Register() {
           </div>
           <input className="register-input" type="text" placeholder="User Name" name="username" onChange={(event) => { handleInput(event) }} />
           <input className="register-input" type="text" placeholder="Email" name="email" onChange={(event) => { handleInput(event) }} />
-          <input className="register-input" type="text" placeholder="Password" name="password" onChange={(event) => { handleInput(event) }} />
-          <input className="register-input" type="text" placeholder="Confirm Password" name="confirmpassword" onChange={(event) => { handleInput(event) }} />
-          <button className="register-button" type="submit">Create User</button>
+          <input className="register-input" type={showPassword} placeholder="Password" name="password" onChange={(event) => { handleInput(event) }} />
+          <input className="register-input" type={showPassword} placeholder="Confirm Password" name="confirmpassword" onChange={(event) => { handleInput(event) }} />
+          <p className="shpassword" onClick={()=>{
+            if(showPassword==="password"){
+              setShowPassword("text")
+            }
+            else{
+              setShowPassword("password")
+            }
+          }}>Show & Hide Password</p>
+          <button className="register-button" type="submit">Create Account</button>
           <span className="login-text">Already have an account? <Link className="login-link" to="/login">Login</Link> </span>
         </form>
         <ToastContainer />

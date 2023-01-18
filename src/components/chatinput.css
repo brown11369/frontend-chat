@@ -56,3 +56,14 @@ aside.EmojiPickerReact.epr-main {
     cursor: pointer;
 }
 
+
+@media screen and (max-width: 480px){
+    .chat-input-container{
+        grid-template-columns: 10% 90%;
+        padding: 0.5rem;
+    }
+    aside.EmojiPickerReact.epr-main {
+        bottom: 4.4rem;
+    }
+}
+

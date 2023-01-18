@@ -1,9 +1,6 @@
 .reg-formcontainer,.login-formcontainer {
     height: 100vh;
     width: 100vw;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -17,19 +14,16 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #131324;
+    background-color: #EDEDED;
 }
 
 .register-form,.login-form {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 1.5rem;
-    background-color: #00000076;
+    background-color: #725EED;
     border-radius: 2rem;
     padding: 3rem 5rem;
 }
@@ -60,13 +54,16 @@
 }
 
 .register-input,.login-input {
-    background-color: transparent;
     padding: 0.4rem;
-    border: 0.1rem solid #4e0eff;
+    border: 0.1rem solid #ffffff;
     border-radius: 0.4rem;
-    color: white;
+    color: #111b21;
     width: 100%;
     font-size: 1.2rem;
+}
+.shpassword{
+    color: #ffffff;
+    margin: auto;
 }
 
 .register-input:focus,.login-input:focus {
@@ -89,7 +86,8 @@
 }
 
 .register-button:hover,.login-button:hover {
-    background-color: #4e0eff;
+    background-color: #ffffff;
+    color: #725eed;
 }
 
 .login-text,.reg-text {

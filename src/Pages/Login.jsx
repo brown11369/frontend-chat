@@ -15,6 +15,8 @@ function Login() {
     email: "",
     password: "",
   })
+
+  const [showPassword,setShowPassword]=useState("password")
   
   useEffect(()=>{
     if(localStorage.getItem("user")){
@@ -74,7 +76,15 @@ function Login() {
             <h1 className="app-heading">Chat</h1>
           </div>
           <input className="login-input" type="text" placeholder="Email" name="email" onChange={(event) => { handleInput(event) }} />
-          <input className="login-input" type="text" placeholder="Password" name="password" onChange={(event) => { handleInput(event) }} />
+          <input className="login-input" type={showPassword} placeholder="Password" name="password" onChange={(event) => { handleInput(event) }} />
+          <p onClick={()=>{
+            if(showPassword==="password"){
+              setShowPassword("text")
+            }
+            else{
+              setShowPassword("password")
+            }
+          }}>Show & Hide Password</p>
           <button className="login-button" type="submit">Login</button>
           <span className="reg-text">Don't have an account? <Link className="reg-link" to="/register">Register</Link> </span>
         </form>
