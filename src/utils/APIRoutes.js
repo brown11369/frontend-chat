@@ -1,4 +1,5 @@
-export const host="http://localhost:8000";
+// export const host="http://localhost:8000";
+export const host="https://vito.onrender.com"
 export const registerRoute=`${host}/api/auth/register`;
 export const loginRoute=`${host}/api/auth/login`;
 export const setAvatarRoute=`${host}/api/auth/setavatar`;
